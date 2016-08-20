@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		913F2DC91D67626100D04B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F2DC81D67626100D04B1D /* AppDelegate.swift */; };
-		913F2DCB1D67626100D04B1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F2DCA1D67626100D04B1D /* ViewController.swift */; };
+		913F2DCB1D67626100D04B1D /* TipsyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F2DCA1D67626100D04B1D /* TipsyVC.swift */; };
 		913F2DCE1D67626100D04B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913F2DCC1D67626100D04B1D /* Main.storyboard */; };
 		913F2DD01D67626100D04B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913F2DCF1D67626100D04B1D /* Assets.xcassets */; };
 		913F2DD31D67626100D04B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913F2DD11D67626100D04B1D /* LaunchScreen.storyboard */; };
+		913F2DE11D685FAE00D04B1D /* TipCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913F2DE01D685FAE00D04B1D /* TipCalc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		913F2DC51D67626000D04B1D /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		913F2DC81D67626100D04B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		913F2DCA1D67626100D04B1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		913F2DCA1D67626100D04B1D /* TipsyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyVC.swift; sourceTree = "<group>"; };
 		913F2DCD1D67626100D04B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		913F2DCF1D67626100D04B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		913F2DD21D67626100D04B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		913F2DD41D67626100D04B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		913F2DE01D685FAE00D04B1D /* TipCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		913F2DC71D67626000D04B1D /* Tipsy */ = {
 			isa = PBXGroup;
 			children = (
+				913F2DDC1D685F4B00D04B1D /* Controller */,
+				913F2DDE1D685F5D00D04B1D /* View */,
+				913F2DDF1D685F6900D04B1D /* Model */,
 				913F2DC81D67626100D04B1D /* AppDelegate.swift */,
-				913F2DCA1D67626100D04B1D /* ViewController.swift */,
 				913F2DCC1D67626100D04B1D /* Main.storyboard */,
 				913F2DCF1D67626100D04B1D /* Assets.xcassets */,
 				913F2DD11D67626100D04B1D /* LaunchScreen.storyboard */,
 				913F2DD41D67626100D04B1D /* Info.plist */,
 			);
 			path = Tipsy;
+			sourceTree = "<group>";
+		};
+		913F2DDC1D685F4B00D04B1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				913F2DCA1D67626100D04B1D /* TipsyVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		913F2DDE1D685F5D00D04B1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		913F2DDF1D685F6900D04B1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				913F2DE01D685FAE00D04B1D /* TipCalc.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				913F2DCB1D67626100D04B1D /* ViewController.swift in Sources */,
+				913F2DCB1D67626100D04B1D /* TipsyVC.swift in Sources */,
+				913F2DE11D685FAE00D04B1D /* TipCalc.swift in Sources */,
 				913F2DC91D67626100D04B1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +327,7 @@
 				913F2DD91D67626100D04B1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
