@@ -27,6 +27,9 @@ class TipsyVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(TipsyVC.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
 
     @IBAction func onBillAmountChanged(_ sender: AnyObject) {
@@ -59,6 +62,11 @@ class TipsyVC: UIViewController {
         tipValue.text = "$\(String(format: "%.2f" ,tipsyVC.calculateTip()))"
         tipTotal.text = "$\(String(format: "%.2f", tipsyVC.calculateTotal()))"
         splitAmount.text = "$\(String(format: "%.2f",tipsyVC.calculateSplit()))"
+    }
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
     }
 
 }
